@@ -1,0 +1,136 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.footer {
+    padding-top: 1rem;
+    background-color: $footer;
+}
+
+// STYLE THE CONTACT-BOX CONTENT 
+.contact-box {
+    position: relative;
+
+    &__icon {
+       width: 2rem;
+       stroke: $primary; 
+       padding-top: 0.5rem;
+
+       @include media-breakpoint-up(sm) {
+        width: 4rem;
+       }
+    }
+
+
+    &__info {
+        padding: 0.4rem;
+        font-weight: 600;
+        
+
+
+        &--title {
+            color: $white;
+            text-decoration: none;
+            font-size: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1.4rem;
+               }
+
+        }
+
+        &--subtitle {
+            font-size: 0.8rem;
+            color: $gray-600;
+            text-decoration: none;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1rem;
+               }
+            
+        }
+    }
+}
+
+// STYLE THE SOCIAL MEDIA CONTENT 
+.footer-sm {
+
+
+    a {
+        color: $white;
+
+        i {
+            font-size: 1rem;
+            margin-left: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1.6rem;
+               }
+
+
+        }
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+// STYLE THE CAMPANY INFO CONTENT 
+.campany-list {
+    display: block;
+    list-style-type: none;
+    position: relative;
+
+    li {
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+// STYLE THE COPYRIGHT  CONTENT 
+.footer-bottom {
+    background-color: $black;
+
+    &__copyright {
+        color: $gray-600;
+        font-weight: 400;
+        
+
+        a {
+            color: $gray-300;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+                text-decoration: underline;
+             
+            }
+        }
+    }
+}
+
+
+// STYLE THE BACK TO TOP BUTTON 
+.back-to-top {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+
+    i {
+        color: $white;
+        font-size: 1rem;
+        @include absoluteCenter;
+    }
+}

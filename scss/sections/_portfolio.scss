@@ -15,7 +15,7 @@
     height: 18.5rem;
     overflow: hidden;
     margin-bottom: 1.2rem;
-    border-top: 0.5rem  solid $purple-light;
+    border-top: 0.5rem  solid lighten($primary, 20%);
 
     img {
         width: 100%;

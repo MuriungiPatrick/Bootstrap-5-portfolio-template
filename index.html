@@ -7,7 +7,8 @@
     <title>Learning bootstrap v5 with sass</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-   <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -752,7 +753,7 @@
       <div class="row text-center text-white">
         <div class="col-12">
           <div class="footer-bottom__copyright">
-            &COPY; Copyright 2021 <a href="#">Company</a> | Created by <a href="http://twitter.com/itsmuriungi" target="_blank">Muriungi</a>
+            &COPY; Copyright 2021 <a href="#">Company</a> | Created by <a href="http://codewithpatrick.com" target="_blank">Muriungi</a>
           </div>
         </div>
       </div>
@@ -768,10 +769,11 @@
 
 
    
-    <script src="/assets/vendors/js/glightbox.min.js"></script>
+    <script src="assets/vendors/js/glightbox.min.js"></script>
 
     <script type="text/javascript">
       const lightbox = GLightbox({
+        'touchNavigation': true,
         'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
         'type': 'video',
         'source': 'youtube', //vimeo, youtube or local
